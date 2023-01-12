@@ -1,0 +1,40 @@
+---
+title: "Notes"
+author: "Indra Boving"
+date: "2023-01-11"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+**#Lecture 1:**
+
+-   Golum: little clay creatures that are not real, but representations
+
+-   Owls: draw 2 circles, then draw the rest!! Lol, thats not helpful.
+    We want to learn all of the steps.
+
+    -    To "draw the owl":
+
+        -   1) Theoretical estimand,
+
+            -   2) scientific causal models,
+
+                -   3) Use 1 & 2 to build stat models
+
+                    -   4) Simulate from 2 to validate step 3
+
+                        -    5) Analyze real data.
+
+                                We dont design the model based on our data, we do it at the end!
+
+Other examples: Galileo and saturn, bayesian is flexible! focus on
+scientific models, minimum fuss.
+
+**#Lecture 2:**
+
+What prop. of globe is covered in water? Use Bayesian inference! Random
+sample, figure out all possible ways to get to those samples.
+
+Things that can happen more ways are more plausible!
