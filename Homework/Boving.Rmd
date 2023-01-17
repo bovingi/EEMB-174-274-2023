@@ -1,0 +1,46 @@
+---
+title: "Homework 1"
+author: "Indra Boving"
+date: "1/16/2023"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Bayesian Statistical Modeling Winter 2023
+# Homework, Week 1
+
+## Question 1: Baye's rule   
+
+### 1A: What is the conditional probability that we are trying to calculate? Write this in words and symbols, as best you can.
+
+We are trying to calculate the probability of having Covid if we have a runny nose (Rn in equation below). 
+
+$$Pr(Covid|Rn)$$
+
+
+
+### 1B: I gave two versions of the calculation in class. The simpler version assumed that you could not have both a cold and covid, while the more complicated one assumed you could have both. Write out one of these as best you can.
+
+Probability that you have covid given that you have a runny nose, assuming that cannot have both Covid and the flu at the same time. 
+
+$$
+Pr(\mathrm{covid}|\mathrm{Rn})= \frac{Pr(\mathrm{Rn}|\mathrm{covid}) Pr(\mathrm{covid})}{Pr(\mathrm{Rn}|\mathrm{covid}) Pr(\mathrm{covid})+Pr(\mathrm{Rn}|\mathrm{flu}) Pr(\mathrm{flu}) }
+$$
+
+
+## Question 2: Bayesian updated covid odds
+
+### 2A: Low covid prevalence
+
+value chosen: 0.11
+
+At this low covid prevalence, the graph has a distict backwards 'J' shape, where your likelihood of having covid declines very quickly. This is because the very low covid rate makes it much more likely that symptoms will be the result of a cold and not covid, so the only time you'd be more likely or just as likely to have covid as you would be to have a cold is when cold prevalances are very low too. 
+
+
+### 2B: High covid prevalence
+
+Value chosen: 0.79
+
+At this high covid prevalence, the shape of the curve is a much shallower version of the previous one, wherein there is an initial (albeit very weak) decrease in covid chances that then stabilizes around 80 and ultimately reaches 0.79. The chances of having covid and not a cold are generally lower than having a cold and not covid, due to the probability of having symptoms given covid being 0.3 (making the probability of having a cold given symptoms be 0.7, assuming symptoms would never be from another source).
